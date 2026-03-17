@@ -1,28 +1,28 @@
-/* NAVBAR */
+
 .custom-navbar {
   background-color: #6b0f1a;
   padding: 10px 20px;
   position: relative;
 }
 
-/* FLEX */
+
 .container-fluid {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* BOTÃO MENU (CORRIGIDO) */
+
 .menu-btn {
   font-size: 26px;
   background: transparent;
   border: none;
-  color: white; /* agora fica visível */
+  color: white; 
   cursor: pointer;
-  z-index: 1001; /* garante que fica clicável */
+  z-index: 1001; 
 }
 
-/* LOGO CENTRAL */
+
 .logo {
   position: absolute;
   left: 50%;
@@ -31,10 +31,10 @@
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
-  pointer-events: none; /* evita bloquear clique do botão */
+  pointer-events: none; 
 }
 
-/* IMAGEM */
+
 .profile-img {
   width: 40px;
   height: 40px;
@@ -42,7 +42,7 @@
   object-fit: cover;
 }
 
-/* SIDEBAR */
+
 .sidebar {
   position: fixed;
   top: 60px;
@@ -56,33 +56,33 @@
   z-index: 1000;
 }
 
-/* ABERTA */
+
 .sidebar.active {
   left: 0;
 }
 
 
-/* RODAPÉ */
+
 .footer {
-  background-color: #6b0f1a; /* mesma cor vinho */
+  background-color: #6b0f1a;
   color: white;
   padding: 15px 20px;
   margin-top: 50px;
 }
 
-/* CONTAINER */
+
 .footer-container {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-/* ESQUERDA */
+
 .footer-left {
   font-size: 14px;
 }
 
-/* CENTRO */
+
 .footer-center {
   position: absolute;
   left: 50%;
@@ -90,53 +90,53 @@
   font-size: 14px;
 }
 
-/* RODAPÉ */
+
 .footer {
   background-color: #6b0f1a;
   color: white;
   padding: 15px 20px;
   margin-top: 50px;
   position: relative;
-  z-index: 2000; /* MAIOR que a sidebar */
+  z-index: 2000; 
 }
 
-/* IMAGENS */
+
 img {
   border-radius: 10px;
 }
 
 .img-ajustada {
   width: 90%;
-  max-width: 600px; /* controla o tamanho máximo */
-  height: auto; /* mantém proporção (não deforma) */
+  max-width: 600px; 
+  height: auto; 
   display: block;
   margin-bottom: 15px;
 }
 
-/* CAIXA DO TÍTULO */
+
 .titulo-box {
-  background-color: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  background-color: rgba(255, 255, 255, 0.8); 
   padding: 15px;
   border-radius: 10px;
   display: inline-block;
 }
 
-/* TÍTULO */
+
 .titulo-box h2 {
-  color: #6b0f1a; /* vinho */
+  color: #6b0f1a; 
   margin: 0;
   font-weight: bold;
 }
 
-/* TEXTO */
+
 p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* BOTÃO ESTILIZADO */
+
 .btn-encomendar {
-  background-color: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  background-color: rgba(255, 255, 255, 0.8); 
   border: none;
   padding: 20px 40px;
   border-radius: 12px;
@@ -147,7 +147,7 @@ p {
   transition: 0.3s;
 }
 
-/* HOVER */
+
 .btn-encomendar:hover {
   background-color: rgba(255, 255, 255, 1);
   transform: scale(1.05);
