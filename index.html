@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<nav class="navbar custom-navbar">
+  <div class="container-fluid">
+
+    <!-- BOTÃO ESQUERDA -->
+    <button class="menu-btn" onclick="toggleSidebar()">
+      ☰
+    </button>
+
+    <!-- NOME CENTRAL -->
+    <h1 class="logo">AUTO KAISER</h1>
+
+  </div>
+</nav>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <h4>Por que criamos o site?</h4>
+  <p>A Auto Kaiser foi criada com o objetivo de transformar a forma como as pessoas personalizam seus carros. Nosso site reúne tecnologia e criatividade para permitir que cada cliente visualize, planeje e desenvolva um veículo único, de acordo com seu estilo e necessidades.
+
+Buscamos oferecer uma experiência inovadora, prática e segura, conectando ideias à realidade por meio de soluções modernas como IA, modelagem 3D e personalização avançada.</p>
+</div>
+
+<!-- SCRIPT -->
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("active");
+  }
+</script>
+
+<body style="
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+
+<div class="container mt-4">
+  <div class="row g-0 justify-content-center">
+
+    <!-- ESQUERDA (IMAGENS) -->
+    <div class="col-md-5 me-4"> <!-- margem à direita -->
+      <img src="imagens/375f86717ce4dd49cedf64fb6b7ed34a.jpg" class="img-ajustada" alt="">
+      <img src="imagens/FERRARI-308-GTSi-5494_8.jpg" class="img-ajustada" alt="">
+    </div>
+
+    <!-- DIREITA (TEXTO) -->
+    <div class="col-md-5 text-white ms-4"> <!-- margem à esquerda -->
+
+      <div class="titulo-box">
+  <h2 class="fs-2 text-danger">PERSONALIZAÇÃO AUTOMOBILÍSTICA</h2>
+</div>
+
+      <p class="mt-2 fs-4">
+        A Auto Kaiser oferece personalização automotiva de ponta, combinando consultoria especializada, tecnologia em realidade aumentada, IA e impressão 3D, além de apps e workshops exclusivos, permitindo que cada cliente visualize, ajuste e instale componentes de forma precisa para criar um carro único, seguro e de alta performance.
+      </p>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- BOTÃO CENTRAL -->
+<div class="container text-center mt-5">
+  <button class="btn-encomendar" data-bs-toggle="modal" data-bs-target="#pedidoModal">
+    ENCOMENDAR<br>CARRO
+  </button>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="pedidoModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Pedido de Carro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form id="formPedido">
+
+          <label>Qual modelo de carro você gostaria?</label>
+          <input type="text" class="form-control mb-3">
+
+          <label>Quais peças personalizadas?</label>
+          <input type="text" class="form-control mb-3">
+
+          <label>Especificações</label>
+          <textarea class="form-control mb-3"></textarea>
+
+          <label>Personalização de cor</label>
+          <input type="text" class="form-control mb-3">
+
+          <button type="submit" class="btn btn-dark w-100">Enviar Pedido</button>
+
+        </form>
+
+        <!-- MENSAGEM FINAL -->
+        <div id="mensagemFinal" style="display: none; text-align: center;">
+          <h5>Obrigado pelo seu pedido!</h5>
+          <p>Enviaremos um modelo 3D nas próximas 24 horas.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- ESQUERDA -->
+    <div class="footer-left">
+      Contato: (42) 9 9123-6345
+    </div>
+
+    <!-- CENTRO -->
+    <div class="footer-center">
+      autokaiser@gmail.com
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* NAVBAR */
+.custom-navbar {
+  background-color: #6b0f1a;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* FLEX */
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* BOTÃO MENU (CORRIGIDO) */
+.menu-btn {
+  font-size: 26px;
+  background: transparent;
+  border: none;
+  color: white; /* agora fica visível */
+  cursor: pointer;
+  z-index: 1001; /* garante que fica clicável */
+}
+
+/* LOGO CENTRAL */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  pointer-events: none; /* evita bloquear clique do botão */
+}
+
+/* IMAGEM */
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: -250px;
+  width: 250px;
+  height: calc(100% - 60px);
+  background-color: #4a0c14;
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+/* ABERTA */
+.sidebar.active {
+  left: 0;
+}
+
+
+/* RODAPÉ */
+.footer {
+  background-color: #6b0f1a; /* mesma cor vinho */
+  color: white;
+  padding: 15px 20px;
+  margin-top: 50px;
+}
+
+/* CONTAINER */
+.footer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ESQUERDA */
+.footer-left {
+  font-size: 14px;
+}
+
+/* CENTRO */
+.footer-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+/* RODAPÉ */
+.footer {
+  background-color: #6b0f1a;
+  color: white;
+  padding: 15px 20px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2000; /* MAIOR que a sidebar */
+}
+
+/* IMAGENS */
+img {
+  border-radius: 10px;
+}
+
+.img-ajustada {
+  width: 90%;
+  max-width: 600px; /* controla o tamanho máximo */
+  height: auto; /* mantém proporção (não deforma) */
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* CAIXA DO TÍTULO */
+.titulo-box {
+  background-color: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* TÍTULO */
+.titulo-box h2 {
+  color: #6b0f1a; /* vinho */
+  margin: 0;
+  font-weight: bold;
+}
+
+/* TEXTO */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* BOTÃO ESTILIZADO */
+.btn-encomendar {
+  background-color: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  border: none;
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.btn-encomendar:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+}
+
